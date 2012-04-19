@@ -1,0 +1,425 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>长夜的牵引|良友电台</title>
+	<link rel="shortcut icon" href="http://onepagelove.com/favicon.ico">
+	<meta name="keywords" content="长夜的牵引,良友电台,html,html5,jQuery,xhtml+css, div+css,templates,blog,drupal开发人,w3c,transition">
+	<meta name="description" content="长夜的牵引是良友电台的一档节目，很好哦！">
+	
+	<style type="text/css">
+	body,h1,h2,h3,h4,p,ul,li,ol,input,textarea,figure,form{margin:0;padding:0}
+	body,input,textarea{font-size:12px;font-family:microsoft yahei}
+	input,textarea{outline:none}
+	body{
+		text-align:center;margin-top:32px;color:#333;padding:0 12px;background:#C0E2F8 url(http://www.daqianduan.com/wp-content/themes/d5/img/special/base.jpg) no-repeat center 0 fixed}
+	ul,ol{list-style:none}
+	img{border:0}
+	button,input {line-height:normal;*overflow:visible}
+	a{color:#0055AA;text-decoration:none}a:hover{color:#f00}
+		.logo {
+			background: url("logo.png") no-repeat scroll 0 0 transparent;
+			color: #FFFFFF;
+			display: block;
+			float: left;
+			font-size: 18px;
+			font-weight: bold;
+			height: 32px;
+			line-height: 100px;
+			overflow: hidden;
+			width: 86px;
+		}
+		.topbar {
+			background-color: #222222;
+			box-shadow: 0 -1px 8px #000000 inset;
+			height: 32px;
+			left: 0;
+			opacity: 0.88;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 99;
+		}
+		.topbar .inner, .header, .content, .footer .inner {
+			margin: 0 auto;
+			max-width: 1000px;
+			min-width: 640px;
+			text-align: left;
+		}
+		.nav {
+				float: left;
+				margin: 0 15px;
+				text-shadow: 1px 1px 1px #222222;
+		}
+		.nav li {
+			float: left;
+			margin-right: 1px;
+			position: relative;
+		}
+		.nav li a {
+				color: #DDDDDD;
+				cursor: pointer;
+				display: block;
+				line-height: 18px;
+				padding: 7px 8px;
+		}
+		a {
+				color: #0055AA;
+				text-decoration: none;
+		}
+		body, input, textarea {
+				font-family: microsoft yahei;
+				font-size: 12px;
+		}
+		.search-form {
+				float: left;
+				margin-top: 5px;
+		}
+		.search-input {
+			background-color: #EDEDED;
+			border: medium none;
+			border-radius: 2px 2px 2px 2px;
+			color: #888888;
+			height: 17px;
+			padding: 3px 4px 2px;
+			width: 140px;
+	}
+	.search-input:focus {
+    background-color: #FFFFFF;
+    color: #444444;
+}
+
+.nav li a:hover, .nav li:nth-child(4):hover {
+    background-color: #000000;
+    color: #EEEEEE;
+}
+.nav li.current-menu-item a, .nav li.current_page_item a, .nav li.current-menu-parent a {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.nav li:hover {
+    background-color: #000000;
+}
+.nav li:hover .sub-menu {
+    display: block;
+}
+.sub-menu {
+    background-color: #000000;
+    border-radius: 0 0 4px 4px;
+    display: none;
+    left: 0;
+    min-width: 140px;
+    padding: 5px 0;
+    position: absolute;
+    top: 32px;
+    z-index: 10;
+}
+.sub-menu li {
+    float: none;
+}
+.sub-menu li a {
+    color: #BBBBBB;
+    padding: 5px 20px;
+}
+.sub-menu li a:hover {
+    background-color: #393939;
+}
+.nav-arrow {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #999999;
+    display: inline-block;
+    margin-left: 3px;
+    position: relative;
+    top: -2px;
+}
+.topmenu {
+    float: right;
+    margin-right: 0;
+}
+
+.content {
+    background-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 0 #CCCCCC;
+    max-width: 728px;
+    min-height: 600px;
+    min-width: 368px;
+    overflow: hidden;
+    padding: 12px 258px 20px 14px;
+    position: relative;
+    z-index: 2;
+}
+.aside-comments strong {
+    color: #0055AA;
+    display: block;
+    font-weight: normal;
+    margin-bottom: 1px;
+}
+.aside-comments a {
+    border-bottom: 1px solid #E6E6E6;
+    color: #999999;
+    display: block;
+    overflow: hidden;
+    padding: 5px 10px 5px 38px;
+}
+.aside-comments a em {
+    color: #DDDDDD;
+    float: right;
+    font-family: simsun;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 10px -10px 0 0;
+}
+.aside-comments img {
+    border-radius: 2px 2px 2px 2px;
+    float: left;
+    margin-left: -38px;
+    width: 32px;
+}
+.aside-comments a:hover {
+    background-color: #FBFBFB;
+    color: #666666;
+}
+.aside-comments a:hover em {
+    color: #AAAAAA;
+}
+
+.aside-tit span {
+    float: right;
+    font-weight: normal;
+}
+.aside-tit a {
+    margin-left: 8px;
+}
+
+		.header {
+			height: 12px;
+			overflow: hidden;
+		}
+		.radio_warp{
+			border:1px solid #
+		}
+		.content{padding-top:30px;}
+
+		.radio_warp .pic{padding:20px;}
+		.radio_warp .player{padding-left:30px;}
+		.sidebar {
+    background-color: #FEFEFE;
+    border-left: 1px solid #DDDDDD;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 3px 0 0 #F6F6F6 inset;
+    height: 100%;
+    padding: 0 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 220px;
+}.footer {
+    color: #666666;
+    padding: 15px 0 20px;
+    text-shadow: 1px 1px 0 #FEFEFE;
+}
+.topbar, .content, .sidebar, .footer {
+    -moz-transition: all 1s ease 0s;
+}
+.footer .manage,.footer .copyright{float:left;width:50%;}
+.radio_warp img{float:left;}
+.radio_warp .intro{float:right;text-align:left;width:213px;}
+.clear{clear:both;}
+
+		.title{font-size:14px;
+		  padding-left: 12px;
+			color: #0055AA;
+		}
+		.title_sub{border-bottom: 1px solid #E6E6E6;font-weight:bold; }
+		.intro-title{font-weight:bold;font-size:14px;}
+		.intro ul{margin-left:2em;}
+		.intro ul li{padding:5px;}
+		.status {float:right;width:50%;padding-right:39%;}
+		.aside-tit {
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    clear: both;
+    color: #333333;
+    font-size: 12px;
+    margin: 0 -12px 10px;
+    padding: 5px 12px;
+}
+.intro ul li a{ 
+	color: #0055AA;
+    margin-bottom: 1px;}
+.pic img{
+    background-color: #FAFAFA;
+    background-image: -moz-linear-gradient(center top , #FAFAFA, #0084A6);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+.themes-btn {
+    margin: 10px -10% 10px 0;
+}
+.themes-btn a {
+    margin-right: 8px;
+}
+.btn {
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 12px;
+    height: 26px;
+    line-height: 26px;
+    min-width: 48px;
+    padding: 0 12px;
+    text-align: center;
+}
+.btn {
+    background-color: #1E7BB3;
+    background-image: -moz-linear-gradient(center top , #3999D2, #1E7BB3);
+    border-bottom: 1px solid #02598E;
+    box-shadow: 0 1px 2px #BBBBBB;
+    text-shadow: 0 -1px 0 #1E7BB3;
+}
+.btn:hover {
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+.btn:active {
+    border-bottom: medium none;
+    position: relative;
+    top: 1px;
+}
+.btn-mini {
+    height: 20px;
+    line-height: 20px;
+    padding: 1px 8px 0;
+}
+input.btn, button.btn {
+    border-left: 0 none;
+    border-right: 0 none;
+    border-top: 0 none;
+    cursor: pointer;
+}
+.btn-success {
+    background-color: #52A152;
+    background-image: -moz-linear-gradient(center top , #5FBE5F, #52A152);
+    border-bottom: 1px solid #417F41;
+    text-shadow: 0 -1px 0 #52A152;
+}
+.btn-error {
+    background-color: #CB423B;
+    background-image: -moz-linear-gradient(center top , #E85A56, #CB423B);
+    border-bottom: 1px solid #AA352F;
+    text-shadow: 0 -1px 0 #CB423B;
+}
+.btn-gray {
+    background-color: #DDDDDD;
+    background-image: -moz-linear-gradient(center top , #EEEEEE, #DDDDDD);
+    border-bottom: 1px solid #A9A9A9;
+    text-shadow: 0 -1px 0 #EEEEEE;
+}
+.btn-gray, .btn-gray:hover {
+    color: #777777;
+}
+.base-tit {
+    border-bottom: 1px solid #DDDDDD;
+    color: #222222;
+    font-size: 14px;
+    height: 24px;
+    line-height: 25px;
+}
+	</style>
+</head>
+<body>
+	<div class="topbar">
+		<div class="inner">
+			<a href="javascript:void(0);" class="logo"  title="爱之家">长夜的牵引</a>
+			<ul class="nav">
+				<li class="menu"><a href="">首页</a></li>
+				<li class="menu"><a href="">标签</a></li>
+				<li class="menu">
+					<a href="">良友直播<em class="nav-arrow"></em></a>
+					<ul class="sub-menu">
+						<li><a href="">长夜的牵引</a></li>
+						<li><a href="">拥抱每一天</a></li>
+						<li><a href="">书香园地</a></li>
+					</ul>
+				</li>
+				<li class="menu"><a href="">图片墙</a></li>
+				<li class="menu"><a href="">要理问答</a></li>
+			</ul>
+			<form action="" class="search-form" method="get">
+				<input type="text" class="search-input" name="s" value="回车搜索 直接有效" onblur="if (this.value == '') {this.value = '回车搜索 直接有效';}" onfocus="if (this.value == '回车搜索 直接有效') {this.value = '';}" x-webkit-speech="">
+			</form>
+			<ul class="nav topmenu">
+				<li><a href="">投稿</a></li>
+				<li><a href="">工具导航</a></li>
+				<li><a href="">公告</a></li>
+				<li><a href="">关于</a></li>
+				<li><a href="">留言</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="header"></div>
+	<div class="content">
+	<div class="radio_warp">
+		<div class="title_sub"><span class="title">节目简介:</span>
+		<div class="status">
+			<marquee direction=left onmouseover=this.stop() onmouseout=this.start() scrolldelay=400>
+			正在播放3月24日节目。欢迎收听！</marquee>
+		</div>
+		</div>
+		<div class="pic">
+			
+			<img src="http://liangyou.net/files/media/images/ws/ws_proginfo_101031.jpg" style="width: 430px; height: 400px; ">
+			<div class="intro">
+				<div class="intro-title">节目主持：</div>
+				<ul>
+					<li>周一至周五 <a href="#">武爽</a></li>
+					<li>周六至周日 <a href="#">苏珊</a></li>
+				</ul>
+				<div class="intro-title">播出时间：</div>
+				<ul>
+					<li>良友i-radio频道	短波31公尺9430千赫	每天00:30-01:00</li>
+					<li>益友一台	中波1566千赫	每天01:00-01:30</li>
+				</ul>
+				<div class="intro-title">回顾收听</div>
+				<div class="intro-title">
+					<p>下载收听</p>
+					<div class="themes-btn">
+						<a class="btn btn-success" href="#">免费下载 »</a>
+						
+						<a class="btn" href="#">查看往期下载 »</a>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="player">
+				<embed src="http://audio.liangyou.net/download.php?t=2&amp;c=ws&amp;f=ws120324.wma" width="430" height="60" type="application/x-mplayer2" autostart="0" showstatusbar="1" showdisplay="0" showcontrols="1" loop="-1" style="margin:0px auto;">
+		</div>
+	</div>
+	<div class="sidebar">
+	<h3 class="aside-tit"><span><a href="http://www.daqianduan.com/readers/">读者墙</a></span>最新评论</h3>
+	<ul class="aside-comments">
+	<li><a title="" href="http://www.daqianduan.com/d4/#comment-10629"><em>&gt;</em><img height="32" width="32" class="avatar avatar-32 photo" src="http://www.daqianduan.com/avatar/f9bebeb1563b9bcc6d37d23e1170604a" alt=""><strong>张刚：</strong>是我下载有问题吗，为什么style.css的全文</a></li><li><a title="解决Firefox下input button内文字垂直居中上的评论" href="http://www.daqianduan.com/firefox-input-button/#comment-10626"><em>&gt;</em><img height="32" width="32" class="avatar avatar-32 photo" src="http://www.daqianduan.com/avatar/f8bd0e4a5ae1ab3edac140662d762b3b" alt=""><strong>bribuy：</strong>学习了，谢谢分享</a></li><li><a title="给大前端投稿上的评论" href="http://www.daqianduan.com/tougao/#comment-10625"><em>&gt;</em><img height="32" width="32" class="avatar avatar-32 photo" src="http://www.daqianduan.com/avatar/9999b20a4eb09fa1d702701778924d34" alt=""><strong>瑜水晴深：</strong>腾讯研发管理部平台研发线Web端设计、开发和实现</a></li><li><a title="站点提交-前端导航上的评论" href="http://www.daqianduan.com/site-submit/#comment-10623"><em>&gt;</em><img height="32" width="32" class="avatar avatar-32 photo" src="http://www.daqianduan.com/avatar/ee3541458c283d8eb05a136e13e6922a" alt=""><strong>hellyhua：</strong>哈华堂  http://www.hellyhua</a></li><li><a title="在做一个在线代码管理平台 近期上线上的评论" href="http://www.daqianduan.com/online-code/#comment-10622"><em>&gt;</em><img height="32" width="32" class="avatar avatar-32 photo" src="http://www.daqianduan.com/avatar/99130fa4fc7b67821011383e456467fc" alt=""><strong>aisin：</strong>jsfiddle么?</a></li>	</ul>
+	</div>
+	</div>
+	<div class="footer">
+		<div class="inner">
+			
+			<p class="copyright">
+				版权所有，保留一切权利！ &copy; 2012 <a href="http://">Bluesky_still</a>&#12288;Theme D5 By <a target="_blank" href="http://www.daqianduan.com/">大前端</a>
+			</p>
+			<p class="manage">
+				<a target="_blank" href="">网站统计</a> | <a href="/wp-login.php">登录</a>		</p>
+		</div>
+	</div>
+</body>
+</html>

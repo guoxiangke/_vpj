@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!-- saved from url=(0109)http://peacebird.pb89.com/x/plugin/?pName=unsubscribe&MIDRID=S7Y1_p9ra2L5v8jW2NjcyNjsf46toTEAA13&Z=-806472908 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="pluginName" content="unsubscribe">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="shortcut icon" href="http://peacebird.pb89.com/x/favicon.ico" type="image/x-icon">
+
+
+<title>取消订阅</title>
+<script src="./取消订阅_files/jquery.min.js"></script><script src="./取消订阅_files/plugin.js.php" type="text/javascript"></script><style type="text/css">
+
+body {
+   background: #fff;
+   margin: 0;
+}
+
+body, div, p, input, textarea, select, button, td {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 10pt;
+}
+
+p {
+   margin: 0.7em 0;
+}
+
+form {
+   margin: 0;
+}
+
+a:link, a:visited, a:active {
+   color: #0046d5;
+}
+
+a:hover {
+   color: #080;
+}
+
+h2, h3 {
+   color: #0046d5;
+}
+
+legend label {
+   font-weight: bold;
+   color: #000;
+}
+
+.req {
+   color: #ff3000;
+}
+
+#containerDiv {
+   width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+}
+
+#headerDiv {
+   background: #7b92bc url(/x/plugin/gradient_blue.gif) repeat-x top left;
+   height: 28px;
+   -moz-border-radius: 4px 4px 0px 0px;
+   -webkit-border: 4px 4px 0px 0px;
+   border-radius: 4px 4px 0px 0px;
+}
+
+#titleDiv {
+   background: #d5d5d5 url(/x/plugin/gradient_gray.gif) repeat-x top left;
+   padding: 3px 20px;
+   color: #000;
+   font-size: 13pt;
+   font-weight: bold;
+   border-left: 1px solid #cfcfcf;
+   border-right: 1px solid #cfcfcf;
+}
+
+#contentDiv {
+   padding: 10px 20px;
+   border-left: 1px solid #cfcfcf;
+   border-right: 1px solid #cfcfcf;
+   background: #fff;
+}
+
+#footerDiv {
+   background: #7b92bc url(/x/plugin/gradient_blue.gif) repeat-x top left;
+   height: 28px;
+   -moz-border-radius: 0px 0px 4px 4px;
+   -webkit-border: 0px 0px 4px 4px;
+   border-radius: 0px 0px 4px 4px;
+}
+
+div.error {
+   background: #ff9999 url(/x/plugin/error.png) 4px 0 no-repeat;
+   border:1px solid #800;
+   padding: 4px 4px 4px 48px;
+   min-height: 35px;
+   font-size: 9pt;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+}
+/*** Button layout ***/
+
+button {
+   display: inline-block;
+   position: relative;
+   min-width: 70px;
+   padding: 3px 6px;
+   color: #000;
+   text-decoration: none;
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   cursor: pointer;
+   border: 1px solid #bfbfbf;   
+	background: #f4f4f4;
+	background-image: -moz-linear-gradient(top, #f4f4f4, #e7e7e7);
+   background-image: -webkit-gradient(linear, center top, center bottom, from(#f4f4f4), to(#e7e7e7));
+}
+   
+button:hover {
+   -moz-box-shadow: 0 0 8px rgba(82, 131, 193, 0.5);
+   border-color: rgba(82, 131, 193, 0.75) !important;
+   outline: medium none;
+}
+
+button:active { 
+	top: 1px; 
+	border-style: inset; 
+}
+
+/*** FIELDSET layout ***/
+
+fieldset.odd, fieldset.even {
+   padding: 7px 10px 10px 10px;
+   margin: 0 0 5px 0;
+   border: 1px solid #bfbfbf;
+   background: url(/x/plugin/gradient.gif) repeat-x;
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   border-radius: 4px;
+}
+
+fieldset.wrapper {
+   padding: 8px;
+   border: 1px solid #bfbfbf;
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   border-radius: 4px;
+}
+
+fieldset.wrapper > legend {
+   color: #0046d5;
+   font-weight: bold;
+}
+
+*:first-child+html legend { margin-bottom: 4px; } 
+
+/*** /FIELDSET layout ***/
+
+/*** TABLE layout ***/
+
+#contentTbl {
+   border-collapse: collapse;
+   border: 1px solid #bfbfbf;
+   width: 100%;
+}
+
+#contentTbl > tbody > tr > td {
+   padding: 4px;
+   border: 1px solid #cfcfcf;
+}
+
+#contentTbl > tbody > tr > td > label {
+   text-align: right;
+   vertical-align: top;
+   font-weight: bold;
+}
+
+#contentTbl > tbody > tr.even {
+   background: #eee;
+}
+
+/*** /TABLE layout ***/
+
+/*** AgendaService plugin ***/
+
+div.agendaHeader {
+   width: 100%;
+   font-weight: bold;
+   background: #404040 url(/x/plugin/bg_black.gif) top left repeat-x;
+   color: #fff;
+}
+
+div.agendaHeader div {
+   padding: 4px;
+}
+
+div.agendaHeader div a:link, div.agendaHeader div a:visited, div.agendaHeader div a:active {
+   color: #fff;
+}
+
+div.agenda {
+   width: 100%;
+   border-bottom: 10px solid #4a4a4a;
+}
+
+div.agendaItem {
+   border-bottom: 1px solid #4a4a4a;
+   padding: 10px 4px 10px 4px;
+   border-left: 4px solid transparent;
+}
+
+div.agendaItem.even {
+   background: #e8e8e8;
+}
+
+div.agendaItem.odd {
+   background: #fff;
+}
+
+div.agendaItem.over {
+   border-left: 4px solid #b6cdf6;
+}
+
+div.agendaItem.selected {
+   background: #fff url(/x/plugin/bg_blue.gif) top left repeat-x;
+}
+
+div.agendaItem .time {
+   font-size: 9pt;
+   border: 1px dotted #a0a0a0;
+   padding: 2px; 
+   margin: 8px 0 3px 0;
+   font-weight: bold;
+}
+
+div.agendaItem .location {
+   color: #0046d5;
+   font-size: 9pt;
+}
+
+div.agendaItem .desc {
+   line-height: 14pt;
+}
+
+div.agendaItem .title {
+   font-size: 12pt;
+}
+
+</style>
+<script src="./取消订阅_files/sf_main.jsp" defer=""></script><script type="text/javascript" src="./取消订阅_files/base_single_icon.js"></script><script type="text/javascript" src="./取消订阅_files/dojo.xd.js"></script><script type="text/javascript" charset="utf-8" src="./取消订阅_files/script.xd.js"></script><script type="text/javascript" charset="utf-8" src="./取消订阅_files/window.xd.js"></script><script type="text/javascript" src="./取消订阅_files/getSupportedSitesJSON.action" id="sufioIoScript1" charset="utf-8"></script><script type="text/javascript" src="./取消订阅_files/rvwl.action" id="sufioIoScript2" charset="utf-8"></script></head>
+<body>
+
+<div id="containerDiv">
+   <div id="headerDiv">&nbsp;</div>
+   <div id="titleDiv">取消订阅&nbsp;<span style="font:10pt Arial">474054236@qq.com</span></div>
+   <div id="contentDiv">
+      
+
+
+<form action="./取消订阅_files/取消订阅.htm" method="post">
+
+<script type="text/javascript">
+
+$(function() {
+	$('#titleDiv').append('&nbsp;<span style="font:10pt Arial">474054236@qq.com</span>');
+});
+
+</script>
+
+<p class="response">474054236@qq.com已经正式的退订该电子期刊。</p><p class="buttons"><button type="submit" name="DMDtask[resubscribe]">撤销退订</button></p></form>
+
+
+   </div>
+   <div id="footerDiv">&nbsp;</div>
+</div>
+
+
+<sfmsg id="sfMsgId" data="{&quot;imageCount&quot;:0,&quot;ip&quot;:&quot;221.194.176.55&quot;}"></sfmsg></body></html>

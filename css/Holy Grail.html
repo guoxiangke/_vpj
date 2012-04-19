@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>圣杯布局</title>
+	<style type="text/css">
+		.content{clear:both;width:960px;margin:0 auto;padding:10px 0;}
+		.content h2{color:#666;font-size:16px;font-weight:normal;margin-bottom:5px;padding:10px 5px;background-color:#f5f5f5;}
+		/*===== 通欄：.grid-m  =====*/
+		.wraper{margin-bottom:20px;overflow:hidden;}
+		.grid_m,.main_wrap{background-color:#ddd;}
+		.col_main{width:100%;float:left;min-height:1px;}
+		.box{height:90px;padding:10px;text-align:center;font: 18px/20px courier new,monospace;border:1px solid #ccc;}
+		.box .hd h3{font-size:14px;color:000;}
+		.col_width{padding:10px;}
+		/*===== 邊欄  =====*/
+		.col_sub{background-color:#cde6ff;float:left;}
+		.col_sub .box{border-color: #B3D9FF;}
+		.extra{background-color:#daf7d4;float:left;}
+		.extra .box{border-color: #b3efaa;}
+		/*=====  兩欄：.grid-s200m750 =====*/
+		.grid_s200m750 .main_wrap{margin-left:210px;}
+		.grid_s200m750 .col_sub{width:200px;margin-left:-100%;}
+		/*===== 兩欄：.grid-m750s200  =====*/
+		.grid_m750s200 .main_wrap{margin-right:210px;}
+		.grid_m750s200 .col_sub{margin-left:-200px;width:200px;}
+		/*===== 三欄：.grid-s200m510e230  =====*/
+		.grid-s200m510e230 .main_wrap{margin:0 240px 0 210px;}
+		.grid-s200m510e230 .col_sub{width:200px;margin-left:-100%;}
+		.grid-s200m510e230 .extra{margin-left:-230px;width:230px;}
+		/*===== 三欄：.grid-e230m510s200  =====*/
+		.grid-e230m510s200 .main_wrap{margin:0 210px 0 240px;}
+		.grid-e230m510s200 .col_sub{width:200px;margin-left:-200px;}
+		.grid-e230m510s200 .extra{margin-left:-100%;width:230px;}
+		/*===== 三欄：.grid-m510e230s200  =====*/
+		.grid-m510e230s200 .main_wrap{margin:0 450px 0 -100%;}
+		.grid-m510e230s200 .col_sub{width:200px;margin-left:-200px;}
+		.grid-m510e230s200 .extra{margin-left:-440px;width:230px;}
+	</style>
+</head>
+<body>
+<div class="content">
+	<h2>通欄：.grid-m</h2>
+	<div class="wraper grid_m">
+		<div class="col_main">
+		<div class="box box_style_a">
+				<div class="hd">
+					<h3>標題</h3>
+					<p><a href="http://www.alistapart.com/articles/holygrail">http://www.alistapart.com/articles/holygrail</a></p>
+					<p><a href="http://blog.kamigami.cn/share/holy-grail-layout/">本文链接</a></p>
+				</div>
+				<div class="bd">
+				內容區域
+				</div>
+			</div>
+		</div>
+	</div>
+	<h2>兩欄：.grid-s200m750</h2>
+	<div class="wraper grid_s200m750">
+		<div class="col_main">
+			<div class="main_wrap">
+				<div class="box box_style_a">
+				<div class="hd">
+					<h3>標題</h3>
+				</div>
+				<div class="bd">
+				main750
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col_sub">
+			<div class="box box_style_a">
+				<div class="hd">
+					<h3>標題</h3>
+				</div>
+				<div class="bd">
+				sub200
+				</div>
+			</div>
+		</div>
+	</div>
+	<h2>兩欄：.grid-m750s200</h2>
+	<div class="wraper grid_m750s200">
+		<div class="col_main">
+			<div class="main_wrap">
+			<div class="box box_style_a">
+				<div class="hd">
+					<h3>標題</h3>
+				</div>
+				<div class="bd">
+				main750
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col_sub">
+			<div class="box box_style_a">
+				<div class="hd">
+					<h3>標題</h3>
+				</div>
+				<div class="bd">
+				sub200
+				</div>
+			</div>
+		</div>
+	</div>
+	<h2>三欄：.grid-s200m510e230</h2>
+	<div class="wraper grid-s200m510e230">
+		<div class="col_main">
+			<div class="main_wrap">
+			<div class="box box_style_a">
+				<div class="hd">
+					<h3>標題</h3>
+				</div>
+				<div class="bd">
+				main510
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col_sub">
+			<div class="box box_style_a">
+				<div class="hd">
+					<h3>標題</h3>
+				</div>
+				<div class="bd">
+				sub200
+				</div>
+			</div>
+		</div>
+		<div class="extra">
+			<div class="box box_style_a">
+				<div class="hd">
+					<h3>標題</h3>
+				</div>
+				<div class="bd">
+				extra230
+				</div>
+			</div>
+		</div>
+	</div>
+	<h2>三欄：.grid-e230m510s200</h2>
+	<div class="wraper grid-e230m510s200">
+		<div class="col_main">
+			<div class="main_wrap">
+			<div class="box box_style_a">
+				<div class="hd">
+					<h3>標題</h3>
+				</div>
+				<div class="bd">
+				main510
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col_sub">
+			<div class="box box_style_a">
+				<div class="hd">
+					<h3>標題</h3>
+				</div>
+				<div class="bd">
+				sub200
+				</div>
+			</div>
+		</div>
+		<div class="extra">
+			<div class="box box_style_a">
+				<div class="hd">
+					<h3>標題</h3>
+				</div>
+				<div class="bd">
+				extra230
+				</div>
+			</div>
+		</div>
+	</div>
+	<h2>三欄：.grid-m510e230s200</h2>
+	<div class="wraper grid-m510e230s200">
+		<div class="col_main">
+			<div class="main_wrap">
+			<div class="box box_style_a">
+				<div class="hd">
+					<h3>標題</h3>
+				</div>
+				<div class="bd">
+				main510
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col_sub">
+			<div class="box box_style_a">
+				<div class="hd">
+					<h3>標題</h3>
+				</div>
+				<div class="bd">
+				sub200
+				</div>
+			</div>
+		</div>
+		<div class="extra">
+			<div class="box box_style_a">
+				<div class="hd">
+					<h3>標題</h3>
+				</div>
+				<div class="bd">
+				extra230
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

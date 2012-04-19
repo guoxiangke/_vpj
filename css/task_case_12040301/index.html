@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		*,html,body{
+			margin:0;
+			padding:0;
+		}
+		.top-nav{
+			width:100%;
+			margin:auto;
+			text-align:center;
+			background-color:#CCC;
+			clear: both;
+		}
+		#wrap{
+			width:950px;
+			margin:auto;
+		}
+		.sidebar{float:left;padding:5px;}
+		#sidebar-L{
+			width:250px;
+		}
+		#sidebar-R{
+			float:right;
+			width:650px;
+		}
+		#header,#footer,#footer-bottom{
+			background-color:#CCC;
+		}
+		#sidebar-L,#sidebar-R{
+			background-color:#CCC;
+		}
+		#content {
+			min-height: 520px;
+			overflow:hidden;
+		}
+		#footer-bottom{
+			text-align:center;
+		}
+		html,body{
+			margin:0;
+			padding:0;
+		}
+		.floatL{float:left;margin-left:10px;}
+		.img-rea{position: relative;}
+		/*#img-flow{
+			left: 300px;
+			position: relative;
+			top: -490px;
+		}*/
+		#img-flow {
+			left: 299px;
+			position: absolute;
+			top: 95px;
+		}
+		#img-flow  img{
+			border:1px solid #999;
+		}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+* html .clearfix {
+    height: 1%;
+}
+:first-child + html .clearfix {
+    min-height: 1%;
+}
+
+		.top-nav,#footer,#header,#content{margin-bottom:1px;}
+	</style>
+</head>
+<body>
+	<div class="top-nav">
+		<p>这里是top部分。</p>
+	</div>
+	<div id="wrap">
+	
+		<div id="header" class="wraps"><p>头部内容</p></div>
+		
+		<div id="content" class="wraps">
+			<div id="sidebar-L" class="sidebar">
+				<p>sidebar-L内容:css</p>
+				<img src="css.jpg" alt="" />
+				
+			</div>
+			<div id="sidebar-R" class="sidebar">
+				<p>sidebar-R内容</p>
+				<div class="img-rea">
+					<p>蓝图：</p>
+					<img src="layout.jpg" alt=""/>
+					<div id="img-flow">
+						<p>html结构：</p>
+						<img src="structure.jpg" alt="" />
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div id="footer" class="wraps"><p>版权信息</p></div>
+	</div>
+	<div id="footer-bottom"><p>另一个footer,底部的白色怎么去掉呢？ <a href="index-3.html">看看三栏布局>></a></p></div>
+</body>
+</html>

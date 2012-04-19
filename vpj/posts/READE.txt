@@ -1,0 +1,46 @@
+在post模板加入以下代码，即可实现效果：滚动时层智能浮动定位
+
+<style type="text/css">
+#sidebar {
+    float: right;
+    overflow: hidden;
+    position: fixed;
+    right: 164px;
+    width: 220px;
+}
+</style>
+<script type="text/javascript">
+$.fn.smartFloat = function() {
+    var position = function(element) {
+        var top = element.position().top, pos = element.css("position");
+        $(window).scroll(function() {
+            var scrolls = $(this).scrollTop();
+            if (scrolls > top) {
+                if (window.XMLHttpRequest) {
+                    element.css({
+                        position: "fixed",
+                        top: 0
+                    });    
+                } else {
+                    element.css({
+                        top: scrolls
+                    });    
+                }
+            }else {
+                element.css({
+                    position: "absolute",
+                    top: top
+                });    
+            }
+        });
+    };
+    return $(this).each(function() {
+        position($(this));                         
+    });
+};
+
+//绑定
+$(document).ready(function(){
+	$("#sidebar").smartFloat();
+});
+</script>

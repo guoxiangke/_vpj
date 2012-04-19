@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		.top-nav{
+			width:100%;
+			margin:auto;
+			text-align:center;
+			background-color:#CCC;
+			clear: both;
+		}
+		#wrap{
+			width:950px;
+			margin:auto;
+		}
+		.sidebar{
+			float:left;
+			width:30%;
+			min-height:520px;
+			padding:10px;
+			
+			background-color:#CCC;
+		}
+		#side-R{
+			float:right;
+		}
+		#side-C{
+			margin:0 17px;
+		}
+		#header,#footer,#footer-bottom{
+			background-color:#CCC;
+		}
+		#content {
+			min-height: 520px;
+			overflow:hidden;
+		}
+		#footer-bottom{
+			text-align:center;
+		}
+		html,body{
+			margin:0;
+			padding:0;
+		}
+		.floatL{float:left;margin-left:10px;}
+		.img-rea{position: relative;}
+		/*#img-flow{
+			left: 300px;
+			position: relative;
+			top: -490px;
+		}*/
+		#img-flow {
+			left: 299px;
+			position: absolute;
+			top: 95px;
+		}
+		#img-flow  img{
+			border:1px solid #999;
+		}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+* html .clearfix {
+    height: 1%;
+}
+:first-child + html .clearfix {
+    min-height: 1%;
+}/*	*/
+	</style>
+</head>
+<body>
+	<div class="top-nav">
+		<p>这里是top部分。</p>
+	</div>
+	<div id="wrap">
+	
+		<div id="header" class="wraps"><p>头部内容</p></div>
+		<div id="content" class="wraps LMR">
+			<div id="side-L"class="sidebar ">
+				<p>side-L内容</p>
+				<ul>
+					<li><a href="css-yuanjiao-demo1.html">纯css实现圆角效果</a></li>
+					<li><a href="Holy Grail.html">圣杯布局</a></li>
+					<li><a href="float-fixed.html">滚动时层智能浮动定位实现</a></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div  id="side-C" class="sidebar "><p>side-C内容</p></div>
+			<div id="side-R" class="sidebar "><p>side-R内容</p></div>
+		</div>
+		<div id="footer" class="wraps"><p>版权信息</p></div>
+	</div>
+	<div id="footer-bottom"><p>另一个footer <a href="index.html">返回>></a></p></div>
+</body>
+</html>

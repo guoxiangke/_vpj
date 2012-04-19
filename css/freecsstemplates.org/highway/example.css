@@ -1,0 +1,100 @@
+
+/*
+Design by Free CSS Templates
+Rewite by dale 
+2012 04-05
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+*,html,body{
+margin:0;
+padding:0;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background: #E3E3E3 url(images/img01.jpg) repeat-x left top;
+	font-family: Arial,'微软雅黑', Helvetica, sans-serif;
+	font-size: 14px;
+	color: #4C4C4C;
+}
+#header{
+	  height: 100px;
+    margin: 0 auto;
+    padding: 0 0 0 30px;
+    width: 950px;
+}
+
+#logo{
+	float:left;
+	width:250px;
+}
+#logo h1 {
+	padding: 40p 0px 0px 80px;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	font-size: 3.8em;
+	background: redc;
+}
+#logo h1:hover {
+	color:#FFF;
+}
+#logo span {
+	margin: 0;
+	padding: 0px 0 0 0px;
+	font: normal 14px Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	color: #FFFFFF;
+} 
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#menu {
+	float:right;
+	width:550px;
+}
+#menu ul li{
+	dispaly:block;
+	font-size:14px;
+}
+#menu ul li{
+		dispaly:block;
+		list-style: none;
+		width:15%;
+		float:left;
+
+}
+#menu a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #FFFFFF;
+	display:block;
+	padding: 40px 20px 0;
+	margin-right: 1px;
+}
+#menu  li a:hover{
+	background-color:#FF6C00;
+}
+#menu .current_page_item a {
+	background: #FF6C00 url(images/img02.jpg) no-repeat;
+	background-position:0px,10px
+	text-decoration: none;
+}
+#page{
+	  margin: 0 auto;
+    padding: 50px 0 0;
+    width: 980px;
+}
+.side-L {
+    float: left;
+    width: 650px;
+}
+.side-R {
+    float: right;
+    width: 280px;
+		border:1px solid #999;
+		
+}

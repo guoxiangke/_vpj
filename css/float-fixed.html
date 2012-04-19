@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	.float {
+    background-color: #FFFEE0;
+    border: 1px solid #FFECB0;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: absolute;
+    right: 10%;
+    top: 131px;
+    width: 60px;
+}
+body{min-height:1000px;}
+.content{
+	width:100px;
+	height:1080px;
+	background-color:#666;
+}
+</style>
+	
+	
+</head>
+<body>
+
+<div id="main">
+	<h1>js页面滚动浮动层智能定位(jQuery)实例页面 </h1>
+	<a href="http://www.zhangxinxu.com/wordpress/2010/11/js%E9%A1%B5%E9%9D%A2%E6%BB%9A%E5%8A%A8%E6%97%B6%E5%B1%82%E6%99%BA%E8%83%BD%E6%B5%AE%E5%8A%A8%E5%AE%9A%E4%BD%8D%E5%AE%9E%E7%8E%B0jquerymootools/">原文链接</a>
+    <div id="body" class="light">
+    	<div id="content" class="show">
+<div style="position: absolute; top: 131px;" class="float" id="float">
+	我是个腼腆羞涩的浮动层<img src="http://web2.qq.com/style/face/6.gif" title="含羞">，你可以轻轻地<a href="http://www.zhangxinxu.com/php/regist.php">点击我</a>(去注册页)。
+</div>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script>
+$.fn.smartFloat = function() {
+	var position = function(element) {
+		var top = element.position().top, pos = element.css("position");
+		$(window).scroll(function() {
+			var scrolls = $(this).scrollTop();
+			if (scrolls > top) {
+				if (window.XMLHttpRequest) {
+					element.css({
+						position: "fixed",
+						top: 0
+					});	
+				} else {
+					element.css({
+						top: scrolls
+					});	
+				}
+			}else {
+				element.css({
+					position: pos,
+					top: top
+				});	
+			}
+		});
+	};
+	return $(this).each(function() {
+		position($(this));						 
+	});
+};
+
+//绑定
+$(document).ready(function(){
+	$("#float").smartFloat();
+});
+</script>
+</body>
+</html>
