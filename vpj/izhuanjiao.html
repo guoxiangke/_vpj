@@ -24,16 +24,21 @@
 	</style>
 	<script type="text/javascript" src="http://test.weipujie.com/sites/all/modules/Interface/jquery/jquery_update/replace/jquery.min.js?v"></script>
 	<script type="text/javascript">
+	
 	$(document).ready(function(){
-	var box_width=parseInt('150px');
-	var box_height=parseInt('150px');
-	var flag=false;
-	$('.thumb-image').mouseover(function(){
-		flag=true;
-		$(this).css("opacity","0.8");
-	}).mouseout(function(){
-		$(this).css("opacity","1");
-	}).click(function(e){
+			$(this).izhuanjiao();
+	});
+	
+	$.fn.izhuanjiao = function() {
+		var box_width=parseInt('150px');
+		var box_height=parseInt('150px');
+		var flag=false;
+		$('.thumb-image').mouseover(function(){
+			flag=true;
+			$(this).css("opacity","0.8");
+		}).mouseout(function(){
+			$(this).css("opacity","1");
+		}).click(function(e){
 				
 				var $obj=$(this);
 					$obj.css('display',"none");
@@ -138,17 +143,11 @@
 				}
 			 
 			})
-
-			
-			
-				
-		
+	};
+	
 
 
 
-
-
-})
 	</script>
 </head>
 <body>
