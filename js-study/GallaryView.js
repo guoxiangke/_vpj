@@ -1,5 +1,21 @@
 define(function(require, exports) {
+// http://requirejs.org/docs/node.html
+//node.js中，如果使用require(module)来定位一个模块 http://blog.csdn.net/huli870715/article/details/7163083
+/*CommonJS也是一套RIA框架，其中的模块可以通过AMD来进行封装，从而可以用define的方式很容易的进行异步装载，
+在这里我们可以省略前2个参数，仅包含回调函数，
+但回调函数的第一个参数是require方法，
+第二个参数是exports对象，它定义了模块本身，回调函数里的require的使用将被自动进行动态加载*/
+
+// http://backbonetutorials.com/organizing-backbone-using-modules/
+// http://documentcloud.github.com/backbone/
+// src http://documentcloud.github.com/backbone/backbone.js
+// http://requirejs.org/
+// src http://requirejs.org/docs/release/1.0.8/comments/require.js
+//英文介绍 https://developer.teradata.com/blog/jasonstrimpel/2011/12/part-1-backbone-js-require-js
     var Backbone = require('../lib/backbone');
+		//http://documentcloud.github.com/underscore/
+		//http://www.css88.com/doc/underscore/
+		//http://documentcloud.github.com/underscore/underscore-min.js
     var _ = require('../lib/underscore');
     var $ = require('../lib/jquery');
 
@@ -14,7 +30,7 @@ define(function(require, exports) {
             'mouseout .gallary-image .thumb-image': 'onMouseout',
             'mousemove .gallary-image .thumb-image': 'onMousemove',
             'click .gallary-image': 'onGallaryImageClick'
-        },
+        }, 
 
         initialize: function(options) {
             _.bindAll(this, 'toggle', 'shrink', 'expand');
